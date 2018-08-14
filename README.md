@@ -1,2 +1,2 @@
 # Solidity-Smart-Contracts
-Simple solidity smart contracts code.
+Simple solidity smart contracts.
