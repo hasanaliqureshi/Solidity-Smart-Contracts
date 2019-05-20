@@ -5,7 +5,7 @@ contract Lottery {
     address public manager; 
     address[] public players;
 
-    function Lottery() public {
+    constructor() public {
         manager = msg.sender;
     }
 
@@ -14,8 +14,8 @@ contract Lottery {
         players.push(msg.sender);
     }
 
-    function random() private view returns (unint){
-        return unint(keccak256(block.difficulty, now, players));
+    function random() private view returns (uint){
+        return uint(keccak256(block.difficulty, now, players));
     }
 
     function pickWinner() public restricted{
