@@ -4,9 +4,8 @@ import './App.css';
 import web3 from './web3';
 
 function App() {
+  web3.eth.getAccounts().then(console.log);
   return (
-    web3.eth.getAccounts()
-    .then(console.log);
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
